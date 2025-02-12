@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        #branding {
+            float: left;
+        }
+        #branding h1 {
+            margin: 0;
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .contact-info h2 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Second Page</h1>
+        <div class="container">
+            <div id="branding">
+                <h1>My Website</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.example.com" target="_blank">Redirecting Link</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="content">
-            <h2>More Information</h2>
-            <p>This is the second page of the website. Here you can add more content.</p>
-            <a href="index.html">Back to Home</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> contact@example.com</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Address:</strong> 123 Main Street, Anytown, USA</p>
+        </div>
+    </div>
 </body>
 </html>
+``` ▋
