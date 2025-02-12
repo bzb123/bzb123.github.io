@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendel Cohen - Aspiring Chabad Rabbi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .value-card {
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: scale(1.05);
+            border: 2px solid #3B82F6;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563EB, #1E40AF);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #EFF6FF, #F8FAFC);
+        }
+    </style>
+</head>
+<body class="min-h-screen hero-bg">
+    <!-- Hero Section -->
+    <div class="pt-32 px-4 text-center fade-in">
+        <h1 class="text-6xl font-bold text-gray-800 mb-6">
+            Mendel Cohen
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+            Aspiring Chabad Rabbi dedicated to spreading Torah wisdom and Jewish values
+        </p>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">My Mission</h2>
+        <p class="text-lg text-gray-600">
+            Following in the footsteps of the Lubavitcher Rebbe, I am committed to sharing the light of Torah 
+            and helping every Jew connect with their heritage through understanding, warmth, and joy.
+        </p>
+    </div>
+
+    <!-- Values Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Torah Study Card -->
+            <div class="value-card bg-white p-6 rounded-xl shadow-lg">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Torah Study</h3>
+                <p class="text-gray-600">Dedicated to continuous learning and deep understanding of Jewish teachings</p>
+            </div>
+
+            <!-- Community Service Card -->
+            <div class="value-card bg-white p-6 rounded-xl shadow-lg">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Community Service</h3>
+                <p class="text-gray-600">Committed to helping others and strengthening our Jewish community</p>
+            </div>
+
+            <!-- Jewish Outreach Card -->
+            <div class="value-card bg-white p-6 rounded-xl shadow-lg">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Jewish Outreach</h3>
+                <p class="text-gray-600">Engaging with fellow Jews to spread the joy and wisdom of Judaism</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning & Activities Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Study & Activities</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Current Studies
+                    </h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Advanced Talmudic Studies</li>
+                        <li>• Chassidic Philosophy</li>
+                        <li>• Practical Rabbinics</li>
+                        <li>• Jewish Law and Custom</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                        </svg>
+                        Community Involvement
+                    </h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Youth Programs</li>
+                        <li>• Torah Classes</li>
+                        <li>• Holiday Events</li>
+                        <li>• One-on-One Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Whether you're interested in learning more about Judaism or would like to study together,
+                I'm here to help on your Jewish journey.
+            </p>
+            <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                Get in Touch
+            </button>
+        </div>
+    </div>
+</body>
+  </html>
